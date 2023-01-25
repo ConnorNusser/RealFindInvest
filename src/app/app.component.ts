@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'RealFindInvest';
+  merch: string[] = [];
+  constructor() { }
+
+  ngOnInit() {
+  }
+  onclick(box: string){
+    this.merch.push(box);
+    console.log(box);
+    console.log("hello");
+  }
+
 }
+
+
